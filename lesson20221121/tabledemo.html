@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table.harvia {
+        border-spacing: 0px;
+      }
+
+      table.harvia th {
+        border-bottom: 2px solid red;
+        font-size: 13px;
+      }
+
+      table.harvia tfoot td {
+        border-top: 2px solid black;
+        font-weight: 700;
+      }
+
+      table.harvia th,
+      table.harvia td {
+        padding-right: 6px;
+        padding-left: 30px;
+        text-align: right;
+        padding-top: 6px;
+      }
+
+      table.harvia td:first-child {
+        text-align: left;
+        padding-left: 6px;
+      }
+
+      table.harvia .highlight {
+        background-color: bisque;
+      }
+
+      #selected {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table demonstration</h1>
+    <table class="harvia">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="highlight">HTML and CSS</th>
+          <th>Introduction to Programming</th>
+          <th class="highlight">English 1</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td class="highlight">4</td>
+          <td>1</td>
+          <td class="highlight">5</td>
+        </tr>
+        <tr>
+          <td>Ann Matheson</td>
+          <td id="selected" class="highlight">5</td>
+          <td>4</td>
+          <td class="highlight">5</td>
+        </tr>
+        <tr>
+          <td>Max Peckinson</td>
+          <td class="highlight">0</td>
+          <td>4</td>
+          <td class="highlight">1</td>
+        </tr>
+        <tr>
+          <td>Don Tepper</td>
+          <td class="highlight">E</td>
+          <td>3</td>
+          <td class="highlight">5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Average</td>
+          <td class="highlight">3.7</td>
+          <td>3.4</td>
+          <td class="highlight">4.4</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

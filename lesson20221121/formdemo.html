@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {
+        background-color: black;
+        color: blue;
+      }
+
+      h2.someIdentifierName {
+        font-size: 50px;
+        padding: 200px;
+      }
+    </style>
+  </head>
+  <body style="background-color: orange; color: green;">
+    <h1>This is form demonstration</h1>
+    <form action="/sometargetresource" method="post">
+      <h2 style="color: rgb(26, 255, 0)">User registration</h2>
+      <div class="someIdentifierName">
+        Name: <input type="text" name="username"/>
+      </div>
+      <div>
+        <div>
+          Street Address: <input type="text" name="street"/>
+        </div>
+        <div>
+          Postal code: <input type="text" name="pocode"/>
+        </div>
+        <div>
+          City: <input type="text" name="city" />
+        </div>        
+      </div>
+      <button>Register</button>
+      <input type="button" value="cancel"/>
+      <input type="submit" value="this is submit button" />
+    </form>
+    <h2 class="someIdentifierName">This is another h2 level header</h2>
+    Blah blah blah
+    <h2 class="someIdentifierName">This is yet another h2 level header</h2>
+    Blah blah blah
+    <h2>This is yet yet another h2 level header</h2>
+    Blah blah blah
+    
+  </body>
+</html>
